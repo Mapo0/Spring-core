@@ -3,6 +3,7 @@ package org.shop.api;
 import java.util.List;
 
 import org.shop.data.User;
+import org.springframework.beans.factory.annotation.Autowired;
 
 // TODO: Auto-generated Javadoc
 /**
@@ -10,6 +11,7 @@ import org.shop.data.User;
  * @author Dzmitry_Naskou
  *
  */
+
 public interface UserService {
     
     /**

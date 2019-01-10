@@ -18,6 +18,7 @@ public class UserInitializer {
      *
      * @param userService the user service
      */
+    @Autowired
     public UserInitializer(UserService userService) {
         super();
         this.userService = userService;

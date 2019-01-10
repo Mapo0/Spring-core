@@ -11,9 +11,10 @@ import org.shop.data.Order;
 import org.shop.data.Proposal;
 import org.shop.data.User;
 import org.shop.repository.OrderRepository;
+import org.springframework.beans.factory.annotation.Autowired;
 
 public class OrderServiceImpl implements OrderService {
-
+    @Autowired
     private OrderRepository orderRepository;
     
     private ItemService itemService;
