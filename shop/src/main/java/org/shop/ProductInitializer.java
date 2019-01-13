@@ -21,7 +21,7 @@ public final class ProductInitializer {
      *
      * @param productService the product service
      */
-    @Autowired
+
     public ProductInitializer(ProductService productService) {
         super();
         this.productService = productService;

@@ -9,7 +9,8 @@ import org.springframework.context.annotation.Import;
 @Configuration
 @ComponentScan(basePackages = "org.shop")
 @Import({ServiceConfiguration.class,
-DataInitializerConfiguration.class})
+DataInitializerConfiguration.class,
+RepositoryConfiguration.class})
 public class FactoryConfiguration {
     @Bean
     public UserRepositoryFactory userRepositoryFactory(){

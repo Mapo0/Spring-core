@@ -27,9 +27,12 @@ public class ShopLauncher {
         //TODO: implement using Spring Framework ApplicationContext
         ApplicationContext ctx = new AnnotationConfigApplicationContext(
                 FactoryConfiguration.class);
-//        ProductService intitialSequence = ctx.getBean(ProductService.class);
-//        System.out.println(((ProductService) intitialSequence).getProducts());
+
         UserService intitialSequence = ctx.getBean(UserService.class);
         System.out.println(((UserService) intitialSequence).getUsers());
+
+        ProductService intitialSequence1 = ctx.getBean(ProductService.class);
+        System.out.println(((ProductService) intitialSequence1).getProducts());
+
     }
 }
